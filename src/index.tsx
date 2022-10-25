@@ -16,11 +16,11 @@ const persistor = persistStore(store);
 
 root.render(
   <React.StrictMode>
-    <Provider store = {store}>
-      <PersistGate persistor={persistor}>
-        <App />
-      </PersistGate>
-    </Provider>
+	<Provider store = {store}>
+	  <PersistGate persistor={persistor}>
+		<App />
+	  </PersistGate>
+	</Provider>
   </React.StrictMode>
 );
 
